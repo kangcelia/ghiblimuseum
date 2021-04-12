@@ -21,6 +21,32 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/art studio.png" : {
+      "ft" : 32768,
+      "iS" : 399099,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/art studio.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/colorful building.jpg" : {
+      "ft" : 16384,
+      "iS" : 480099,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/colorful building.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/ghiblimuseumLOGO.png" : {
       "ft" : 32768,
       "iS" : 14277,
@@ -43,6 +69,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/plants.png" : {
+      "ft" : 32768,
+      "iS" : 419405,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/plants.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
