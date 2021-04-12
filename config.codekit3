@@ -34,6 +34,45 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/heroimage.JPG" : {
+      "ft" : 16384,
+      "iS" : 198858,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heroimage.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ticketicon.png" : {
+      "ft" : 32768,
+      "iS" : 23852,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ticketicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/tripicon.png" : {
+      "ft" : 32768,
+      "iS" : 23462,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/tripicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
