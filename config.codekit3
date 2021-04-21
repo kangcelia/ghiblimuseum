@@ -322,6 +322,14 @@
       "oAP" : "\/dev\/content\/_planning.html",
       "oF" : 0
     },
+    "\/dev\/content\/_search.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/_search.html",
+      "oF" : 0
+    },
     "\/dev\/content\/_whats-new.kit" : {
       "cB" : 0,
       "ft" : 2048,
