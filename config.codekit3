@@ -21,19 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/art studio.png" : {
-      "ft" : 32768,
-      "iS" : 399099,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/art studio.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/catbus.png" : {
       "ft" : 32768,
       "iS" : 126065,
@@ -125,6 +112,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/ladder.jpg" : {
+      "ft" : 16384,
+      "iS" : 186330,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ladder.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/location-icon.png" : {
       "ft" : 32768,
       "iS" : 737,
@@ -143,19 +143,6 @@
       "iS" : 421,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/mobile-icon.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/plants.png" : {
-      "ft" : 32768,
-      "iS" : 419405,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/plants.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
