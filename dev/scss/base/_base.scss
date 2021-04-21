@@ -15,18 +15,6 @@ ul {
     }
 }
 
-.content {
-    margin-bottom: 24px;
-
-    @include md {
-        margin-bottom: 32px;
-    }
-
-    @include xl {
-        margin-bottom: 64px;
-    }
-}
-
 main {
     display: grid;
     grid-template-areas:
