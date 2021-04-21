@@ -381,6 +381,13 @@ main {
 .hero {
   grid-area: hero;
 }
+.hero ul {
+  display: grid;
+}
+.hero a {
+  display: grid;
+  grid-template-columns: 500px auto 100px;
+}
 
 .planning {
   grid-area: planning;

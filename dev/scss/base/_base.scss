@@ -37,6 +37,15 @@ main {
 
 .hero {
     grid-area: hero;
+
+    ul {
+        display: grid;
+    }
+
+    a {
+        display: grid;
+        grid-template-columns: 500px auto 100px;
+    }
 }
 
 .planning {
