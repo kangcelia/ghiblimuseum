@@ -379,6 +379,39 @@ ul li {
   }
 }
 
+main {
+  display: grid;
+  grid-template-areas: "header" "search" "hero" "planning" "gallery" "whats-new" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.search {
+  grid-area: search;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.planning {
+  grid-area: planning;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.whats-new {
+  grid-area: whats-new;
+}
+
+.footer {
+  grid-area: footer;
+}
+
 /* =============
     Typography
 ============= */
