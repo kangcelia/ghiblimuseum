@@ -411,6 +411,13 @@ main {
 .footer {
   grid-area: footer;
 }
+.footer .socials ul {
+  display: flex;
+}
+.footer .locations section ul li {
+  display: grid;
+  grid-template-columns: 20px 200px;
+}
 
 /* =============
     Typography

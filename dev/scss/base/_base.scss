@@ -71,4 +71,15 @@ main {
 
 .footer {
     grid-area: footer;
+
+    .socials ul {
+        display: flex;
+    }
+
+    .locations {
+        section ul li {
+            display: grid;
+            grid-template-columns: 20px 200px;
+        }
+    }
 }
