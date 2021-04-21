@@ -392,6 +392,13 @@ main {
 .planning {
   grid-area: planning;
 }
+.planning ul {
+  display: grid;
+}
+.planning a {
+  display: grid;
+  grid-template-columns: 400px auto;
+}
 
 .gallery {
   grid-area: gallery;

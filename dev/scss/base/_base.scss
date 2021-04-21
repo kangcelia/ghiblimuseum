@@ -50,6 +50,15 @@ main {
 
 .planning {
     grid-area: planning;
+
+    ul {
+        display: grid;
+    }
+
+    a {
+        display: grid;
+        grid-template-columns: 400px auto;
+    }
 }
 
 .gallery {
