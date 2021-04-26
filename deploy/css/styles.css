@@ -386,7 +386,17 @@ main {
 }
 .hero a {
   display: grid;
-  grid-template-columns: 500px auto 100px;
+}
+@media (min-width: 768px) {
+  .hero ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .hero ul .ghibli {
+    grid-column: span 5;
+  }
+  .hero ul .location {
+    grid-column: span 7;
+  }
 }
 
 .planning {

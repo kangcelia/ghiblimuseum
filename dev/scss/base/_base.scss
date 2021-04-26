@@ -44,7 +44,20 @@ main {
 
     a {
         display: grid;
-        grid-template-columns: 500px auto 100px;
+        //grid-template-columns: 500px auto 100px;
+    }
+
+    @include md {
+        ul {
+            grid-template-columns: repeat(12, 1fr);
+
+            .ghibli {
+                grid-column: span 5;
+            }
+            .location {
+                grid-column: span 7;
+            } 
+        }
     }
 }
 
