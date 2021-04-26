@@ -445,6 +445,17 @@ main {
 .whats-new {
   grid-area: whats-new;
 }
+.whats-new ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .whats-new ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .whats-new li {
+    grid-column: span 2;
+  }
+}
 
 .footer {
   grid-area: footer;

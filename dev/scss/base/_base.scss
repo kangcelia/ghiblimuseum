@@ -118,6 +118,19 @@ main {
 
 .whats-new {
     grid-area: whats-new;
+
+    ul {
+        display: grid;
+    }
+
+    @include md {
+        ul {
+            grid-template-columns: repeat(12, 1fr);
+        }
+        li {
+            grid-column: span 2;
+        }
+    }
 }
 
 .footer {
