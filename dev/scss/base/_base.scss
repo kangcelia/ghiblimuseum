@@ -25,6 +25,18 @@ main {
         "gallery"
         "whats-new"
         "footer";
+    
+    @include md {
+        grid-template-areas: 
+            "header header header header header header"
+            "search search search search search search"
+            "hero hero hero hero hero hero"
+            "planning planning planning planning planning planning"
+            "gallery gallery gallery gallery gallery gallery"
+            "whats-new whats-new whats-new whats-new whats-new whats-new"
+            "footer footer footer footer footer footer"; 
+    }
+
 }
 
 .header {
