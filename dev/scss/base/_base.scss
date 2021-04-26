@@ -84,6 +84,13 @@ main {
         display: grid;
         grid-template-columns: 400px auto;
     }
+
+    @include md {
+        ul {
+           grid-template-columns: repeat(12, 1fr); 
+           grid-gap: 20px;
+        }
+    }
 }
 
 .gallery {
