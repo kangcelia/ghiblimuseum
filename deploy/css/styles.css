@@ -410,7 +410,7 @@ main {
 .planning ul {
   display: grid;
 }
-.planning a {
+.planning .plan {
   display: grid;
   grid-template-columns: 400px auto;
 }
@@ -423,6 +423,23 @@ main {
 
 .gallery {
   grid-area: gallery;
+}
+.gallery ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .gallery ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .gallery .colorful {
+    grid-column: span 8;
+    grid-row: span 6;
+  }
+  .gallery .plants {
+    grid-column: span 4;
+    grid-row: span 6;
+  }
 }
 
 .whats-new {
