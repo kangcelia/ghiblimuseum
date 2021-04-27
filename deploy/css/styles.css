@@ -450,10 +450,9 @@ main {
 }
 @media (min-width: 768px) {
   .whats-new ul {
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .whats-new li {
-    grid-column: span 2;
+    grid-template-columns: 350px 350px;
+    grid-gap: 30px;
+    justify-content: center;
   }
 }
 
@@ -466,6 +465,25 @@ main {
 .footer .locations section ul li {
   display: grid;
   grid-template-columns: 20px 200px;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .footer .locations {
+    grid-column: 2/6;
+    grid-row: 1/4;
+  }
+  .footer .newsletter {
+    grid-column: 6/12;
+    grid-row: 1/2;
+  }
+  .footer .socials {
+    grid-column: 6/12;
+    grid-row: 2/3;
+  }
 }
 
 /* =============
