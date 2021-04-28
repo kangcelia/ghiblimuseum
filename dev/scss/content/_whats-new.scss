@@ -1,0 +1,35 @@
+.whats-new-image {
+    background-size: cover;
+    width: 350px;
+    height: 180px;
+}
+
+#ghibli-sketch {
+    .whats-new-image {
+        background: url("/deploy/img/ghibli-sketch.png") no-repeat;
+    }
+}
+
+#saturn-theater {
+    .whats-new-image {
+        background: url("/deploy/img/saturn-theater.png") no-repeat;
+    }
+}
+
+#reading-room {
+    .whats-new-image {
+        background: url("/deploy/img/reading-room.png") no-repeat;
+    }
+}
+
+#spaceofwonder {
+    .whats-new-image {
+        background: url("/deploy/img/spaceofwonder.png") no-repeat;
+    }
+}
+
+#catbus {
+    .whats-new-image {
+        background: url("/deploy/img/catbus.png") no-repeat;
+    }
+}
