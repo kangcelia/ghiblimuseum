@@ -1,0 +1,21 @@
+.gallery {
+    width: 100%;
+
+    .colorful {
+        background-image: url("/deploy/img/colorful building.jpg");
+        height: 500px;
+        width: 100%;
+    }
+
+    .plants {
+        background-image: url("/deploy/img/plants.jpg");
+        height: 700px;
+        width: 100%;
+    }
+
+    @include md {
+        .image {
+            height: 700px;
+        }
+    }
+}
