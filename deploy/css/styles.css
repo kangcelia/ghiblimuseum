@@ -412,9 +412,12 @@ main {
 }
 .planning .plan {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 70% auto;
 }
 @media (min-width: 768px) {
+  .planning .plan {
+    grid-template-columns: 400px auto;
+  }
   .planning ul {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;

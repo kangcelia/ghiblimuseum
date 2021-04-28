@@ -82,10 +82,13 @@ main {
 
     .plan {
         display: grid;
-        grid-template-columns: 400px auto;
+        grid-template-columns: 70% auto;
     }
 
     @include md {
+        .plan {
+            grid-template-columns: 400px auto;
+        }
         ul {
            grid-template-columns: repeat(12, 1fr); 
            grid-gap: 20px;
