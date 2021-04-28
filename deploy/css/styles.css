@@ -506,3 +506,11 @@ p {
 .section-title {
   font-weight: 300;
 }
+
+.hero-img {
+  background: url("../../../deploy/img/heroimage.JPG");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+}

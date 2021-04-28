@@ -1,0 +1,7 @@
+.hero-img {
+  background: url("../../../deploy/img/heroimage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+}
