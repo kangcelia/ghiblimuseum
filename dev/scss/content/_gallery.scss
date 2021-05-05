@@ -1,6 +1,11 @@
 .gallery {
     width: 100%;
 
+    .image {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
     .colorful {
         background-image: url("/deploy/img/colorful building.jpg");
         height: 500px;

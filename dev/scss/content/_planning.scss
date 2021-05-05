@@ -1,0 +1,22 @@
+.planning {
+    .plan {
+        margin: 20px 0;
+        padding: 20px;
+        background: $white;
+
+        button {
+            background: $yellow;
+            padding: 10px 20px;
+            border: none;
+
+            &:hover {
+                background: darken($yellow, 20%);
+            }
+        }
+    }
+
+    @include lg {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
