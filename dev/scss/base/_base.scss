@@ -25,18 +25,6 @@ main {
         "gallery"
         "whats-new"
         "footer";
-    
-    @include md {
-        grid-template-areas: 
-            "header header header header header header"
-            "search search search search search search"
-            "hero hero hero hero hero hero"
-            "planning planning planning planning planning planning"
-            "gallery gallery gallery gallery gallery gallery"
-            "whats-new whats-new whats-new whats-new whats-new whats-new"
-            "footer footer footer footer footer footer"; 
-    }
-
 }
 
 .header {
@@ -45,10 +33,20 @@ main {
 
 .search {
     grid-area: search;
+
+    form {
+        display: grid;
+        grid-template-columns: 85% auto;
+        grid-gap: 20px;
+    }
 }
 
 .hero {
     grid-area: hero;
+
+    img {
+        width: 100%;
+    }
 
     ul {
         display: grid;
@@ -56,18 +54,19 @@ main {
 
     a {
         display: grid;
-        //grid-template-columns: 500px auto 100px;
+        grid-template-columns: 90% auto;
+        align-items: center;
     }
 
     @include md {
         ul {
-            grid-template-columns: repeat(12, 1fr);
+            grid-template-columns: repeat(6, 1fr);
 
             .ghibli {
-                grid-column: span 5;
+                grid-column: span 3;
             }
             .location {
-                grid-column: span 7;
+                grid-column: span 3;
             } 
         }
     }
@@ -87,10 +86,10 @@ main {
 
     @include md {
         .plan {
-            grid-template-columns: 400px auto;
+            grid-template-columns: 70% auto;
         }
         ul {
-           grid-template-columns: repeat(12, 1fr); 
+           grid-template-columns: 50% auto; 
            grid-gap: 20px;
         }
     }
@@ -105,13 +104,18 @@ main {
 
     @include md {
         ul {
-            grid-template-columns: 50% auto;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                    "colorful colorful plants plants"
+                    "colorful colorful plants plants"
+                    "colorful colorful plants plants";
        }
         .colorful {
-            grid-column: 1 / 6;
+            grid-area: colorful;
         }
         .plants {
-            grid-column: span 6 / 12;
+            grid-area: plants;
         }
     }
 }
@@ -125,9 +129,38 @@ main {
 
     @include md {
         ul {
-            grid-template-columns: 350px 350px;
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 30px;
             justify-content: center;
+            grid-template-areas:
+                    "ghibli-sketch ghibli-sketch saturn-theater saturn-theater"
+                    "reading-room reading-room spaceofwonder spaceofwonder"
+                    ". catbus catbus .";
+        }
+
+        #ghibli-sketch {
+            grid-area: ghibli-sketch;
+        }
+        #saturn-theater {
+            grid-area: saturn-theater;
+        }
+        #reading-room {
+            grid-area: reading-room;
+        }
+        #spaceofwonder {
+            grid-area: spaceofwonder;
+        }
+        #catbus {
+            grid-area: catbus;
+        }
+    }
+
+    @include lg {
+        ul {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+                    "ghibli-sketch ghibli-sketch saturn-theater saturn theater reading-room reading-room"
+                    ". spaceofwonder spaceofwonder catbus catbus .";
         }
     }
 }
@@ -148,22 +181,27 @@ main {
 
     @include md {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 50px;
+        grid-template-areas:
+                ". location . newsletter"
+                ". location . socials";
 
         .locations {
-            grid-column: 2 / 6;
-            grid-row: 1 / 4;
+            grid-area: locations;
         }
 
         .newsletter {
-            grid-column: 6 / 12;
-            grid-row: 1 / 2;
+            grid-area: newsletter;
         }
 
         .socials {
-            grid-column: 6 / 12;
-            grid-row: 2 / 3;
+            grid-area: socials;
         }
     }
+
+    @include lg {
+        grid-template-areas: ". location . newsletter . socials";
+    }
+        
 }

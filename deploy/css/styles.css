@@ -369,11 +369,6 @@ main {
   display: grid;
   grid-template-areas: "header" "search" "hero" "planning" "gallery" "whats-new" "footer";
 }
-@media (min-width: 768px) {
-  main {
-    grid-template-areas: "header header header header header header" "search search search search search search" "hero hero hero hero hero hero" "planning planning planning planning planning planning" "gallery gallery gallery gallery gallery gallery" "whats-new whats-new whats-new whats-new whats-new whats-new" "footer footer footer footer footer footer";
-  }
-}
 
 .header {
   grid-area: header;
@@ -382,25 +377,35 @@ main {
 .search {
   grid-area: search;
 }
+.search form {
+  display: grid;
+  grid-template-columns: 85% auto;
+  grid-gap: 20px;
+}
 
 .hero {
   grid-area: hero;
+}
+.hero img {
+  width: 100%;
 }
 .hero ul {
   display: grid;
 }
 .hero a {
   display: grid;
+  grid-template-columns: 90% auto;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .hero ul {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
   .hero ul .ghibli {
-    grid-column: span 5;
+    grid-column: span 3;
   }
   .hero ul .location {
-    grid-column: span 7;
+    grid-column: span 3;
   }
 }
 
@@ -416,10 +421,10 @@ main {
 }
 @media (min-width: 768px) {
   .planning .plan {
-    grid-template-columns: 400px auto;
+    grid-template-columns: 70% auto;
   }
   .planning ul {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 50% auto;
     grid-gap: 20px;
   }
 }
@@ -432,13 +437,15 @@ main {
 }
 @media (min-width: 768px) {
   .gallery ul {
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "colorful colorful plants plants" "colorful colorful plants plants" "colorful colorful plants plants";
   }
   .gallery .colorful {
-    grid-column: 1/6;
+    grid-area: colorful;
   }
   .gallery .plants {
-    grid-column: span 6/12;
+    grid-area: plants;
   }
 }
 
@@ -450,9 +457,31 @@ main {
 }
 @media (min-width: 768px) {
   .whats-new ul {
-    grid-template-columns: 350px 350px;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     justify-content: center;
+    grid-template-areas: "ghibli-sketch ghibli-sketch saturn-theater saturn-theater" "reading-room reading-room spaceofwonder spaceofwonder" ". catbus catbus .";
+  }
+  .whats-new #ghibli-sketch {
+    grid-area: ghibli-sketch;
+  }
+  .whats-new #saturn-theater {
+    grid-area: saturn-theater;
+  }
+  .whats-new #reading-room {
+    grid-area: reading-room;
+  }
+  .whats-new #spaceofwonder {
+    grid-area: spaceofwonder;
+  }
+  .whats-new #catbus {
+    grid-area: catbus;
+  }
+}
+@media (min-width: 1024px) {
+  .whats-new ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "ghibli-sketch ghibli-sketch saturn-theater saturn theater reading-room reading-room" ". spaceofwonder spaceofwonder catbus catbus .";
   }
 }
 
@@ -469,20 +498,23 @@ main {
 @media (min-width: 768px) {
   .footer {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 50px;
+    grid-template-areas: ". location . newsletter" ". location . socials";
   }
   .footer .locations {
-    grid-column: 2/6;
-    grid-row: 1/4;
+    grid-area: locations;
   }
   .footer .newsletter {
-    grid-column: 6/12;
-    grid-row: 1/2;
+    grid-area: newsletter;
   }
   .footer .socials {
-    grid-column: 6/12;
-    grid-row: 2/3;
+    grid-area: socials;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-areas: ". location . newsletter . socials";
   }
 }
 
