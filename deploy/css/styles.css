@@ -566,26 +566,49 @@ p {
   }
 }
 
+@media (min-width: 768px) {
+  .whats-new {
+    width: 75%;
+    margin: 30px auto;
+  }
+}
+.whats-new li {
+  background: #fff;
+}
+.whats-new li .new-content {
+  padding: 0 30px 30px;
+}
+.whats-new li button {
+  background: #B7EBE8;
+  border: none;
+  padding: 5px 10px;
+}
+
 .whats-new-image {
   height: 180px;
 }
 
 #ghibli-sketch .whats-new-image {
   background: url("/deploy/img/ghibli-sketch.png") no-repeat;
+  background-size: cover;
 }
 
 #saturn-theater .whats-new-image {
   background: url("/deploy/img/saturn-theater.png") no-repeat;
+  background-size: cover;
 }
 
 #reading-room .whats-new-image {
   background: url("/deploy/img/reading-room.png") no-repeat;
+  background-size: cover;
 }
 
 #spaceofwonder .whats-new-image {
   background: url("/deploy/img/spaceofwonder.png") no-repeat;
+  background-size: cover;
 }
 
 #catbus .whats-new-image {
   background: url("/deploy/img/catbus.png") no-repeat;
+  background-size: cover;
 }

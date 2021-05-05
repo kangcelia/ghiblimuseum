@@ -1,4 +1,23 @@
+.whats-new {
+    @include md {
+        width: 75%;
+        margin: 30px auto;
+    }
 
+    li {
+        background: $white;
+
+        .new-content {
+            padding: 0 30px 30px;
+        }
+
+        button {
+            background: $turtleBlueLite;
+            border: none;
+            padding: 5px 10px;
+        }
+    }
+}
 
 .whats-new-image {
     height: 180px;
@@ -7,29 +26,34 @@
 #ghibli-sketch {
     .whats-new-image {
         background: url("/deploy/img/ghibli-sketch.png") no-repeat;
+        background-size: cover;
     }
 }
 
 #saturn-theater {
     .whats-new-image {
         background: url("/deploy/img/saturn-theater.png") no-repeat;
+        background-size: cover;
     }
 }
 
 #reading-room {
     .whats-new-image {
         background: url("/deploy/img/reading-room.png") no-repeat;
+        background-size: cover;
     }
 }
 
 #spaceofwonder {
     .whats-new-image {
         background: url("/deploy/img/spaceofwonder.png") no-repeat;
+        background-size: cover;
     }
 }
 
 #catbus {
     .whats-new-image {
         background: url("/deploy/img/catbus.png") no-repeat;
+        background-size: cover;
     }
 }
