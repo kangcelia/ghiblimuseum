@@ -547,6 +547,33 @@ p {
   width: 100%;
 }
 
+.hero ul .details h5 {
+  display: none;
+}
+.hero ul .details a {
+  color: #000;
+  padding: 20px;
+  min-height: 110px;
+}
+.hero ul .ghibli a {
+  background: #fee859;
+}
+.hero ul .ghibli a:hover {
+  background: #fee126;
+}
+.hero ul .location a {
+  background: #fddb00;
+}
+.hero ul .location a:hover {
+  background: #caaf00;
+}
+@media (min-width: 768px) {
+  .hero ul .details h5 {
+    display: inline;
+    padding: 10px;
+  }
+}
+
 .gallery {
   width: 100%;
 }

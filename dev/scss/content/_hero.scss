@@ -5,3 +5,35 @@
     height: 700px;
     width: 100%;
 }
+
+.hero {
+    ul {
+        .details h5 {
+            display: none;
+        }
+        .details a {
+            color: $black;
+            padding: 20px;
+            min-height: 110px;
+        }
+        .ghibli a {
+            background: $yellow;
+            &:hover {
+                    background: darken($yellow, 10%);
+            }
+        }
+        .location a {
+            background: $yellowDark;
+            &:hover {
+                    background: darken($yellowDark, 10%);
+            }
+        }
+
+        @include md {
+            .details h5 {
+                display: inline;
+                padding: 10px;
+            }
+        }
+    }
+}
