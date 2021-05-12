@@ -4,6 +4,11 @@
         padding: 20px;
         background: $white;
 
+        h1 {
+            font-weight: 400;
+            font-size: rem-calc(35);
+        }
+
         button {
             background: $yellow;
             padding: 10px 20px;

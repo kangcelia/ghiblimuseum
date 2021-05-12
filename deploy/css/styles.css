@@ -522,21 +522,7 @@ main {
     Typography
 ============= */
 body {
-  font-family: "Open Sans", sans-serif;
-}
-
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-.section-title {
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-img {
@@ -547,6 +533,9 @@ p {
   width: 100%;
 }
 
+.hero a {
+  text-decoration: none;
+}
 .hero ul .details h5 {
   display: none;
 }
@@ -563,6 +552,9 @@ p {
 }
 .hero ul .location a {
   background: #fddb00;
+}
+.hero ul .location a .bold {
+  font-weight: 700;
 }
 .hero ul .location a:hover {
   background: #caaf00;

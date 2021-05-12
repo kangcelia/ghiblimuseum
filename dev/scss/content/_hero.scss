@@ -7,6 +7,10 @@
 }
 
 .hero {
+    a {
+        text-decoration: none;
+    }
+    
     ul {
         .details h5 {
             display: none;
@@ -24,6 +28,11 @@
         }
         .location a {
             background: $yellowDark;
+
+            .bold {
+                font-weight: 700;
+            }
+
             &:hover {
                     background: darken($yellowDark, 10%);
             }
